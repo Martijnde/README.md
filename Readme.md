@@ -13,7 +13,6 @@ Readme.md - This file explaining the structure of the used network and training 
 
 
 #Model structure:
-
 I decide to use the Keras Sequential model with ... layers and ...., 
 
 
@@ -30,22 +29,23 @@ would mean no good for driving the track.
 The parameters I tweaked were: Number of EPOCH's and the Batch sizes. 
 This overview below shows the gains and losses the model suffered during tweaking it's parameters and the resulting loss & val_loss values, followed by the adjustments I made to optimize the the parameters of the model using the training datat to enable the car to perform best possible when running the drive.py file in the simulator.
 
-Using 10 EPOCH's with batch size 64 resulted in this results at Epoch 10/10:
-8064/8036 [==============================] - 44s - loss: 0.0128 - val_loss: 0.0111
+Using 10 EPOCH's with batch size 64 resulted in this valeus: 
+Epoch 10/10 = 8064/8036 [==============================] - 44s - loss: 0.0128 - val_loss: 0.0111
 
 
-Using 25 EPOCH's with batch size 64 resulted in even better results, both loss and val_loss were lower using 10 EPOCH's:
-8064/8036 [==============================] - 48s - loss: 0.0112 - val_loss: 0.0101
+Using 25 EPOCH's with batch size 64 resulted in even better results, both loss and val_loss were lower:
+Epoch 25/25 = 8064/8036 [==============================] - 48s - loss: 0.0112 - val_loss: 0.0101
 
 
 Using 75 EPOCH's with batch size 64  resulted in a lower loss, but higher val_loss:
-8064/8036 [==============================] - 42s - loss: 0.0103 - val_loss: 0.0111
+Epoch 75/75 = 8064/8036 [==============================] - 42s - loss: 0.0103 - val_loss: 0.0111
 
 
-Using 25 EPOCH's with batch size 128 resulted in....:
+Using 25 EPOCH's with batch size 128 resulted in the same loss as 25 EPOCH's with batch size 64, but a better vall_loss:
+Epoch 25/25 = 8064/8036 [==============================] - 42s - loss: 0.0114 - val_loss: 0.0094
 
-
-
+Using 25 EPOCH's with batch size 256 resulted in....:
+Epoch 25/25 = 
 
 
 
