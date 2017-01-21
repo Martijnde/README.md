@@ -1,8 +1,9 @@
+#SDC-Project-3-Keras-CNN-Clone-Human-Driving
+
 Before starting this project I did research about the best aproach to take for this project, I used this resources to get a good feeling 
 about the purpose of the project and best techniques to counter problems when facing them, see all resources used listed below this page.
 
 
-xxx > List of used resources
 
 
 
@@ -218,7 +219,18 @@ Epoch 25/25
 Using 75 EPOCH's resulted in ... results, :
 
 
-List of used resources:
+
+
+
+
+
+
+
+
+
+
+
+#List of used resources:
 
 The Sequential model API:
 https://keras.io/models/sequential/
