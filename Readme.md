@@ -1,9 +1,5 @@
 #SDC-Project-3-Keras-CNN-Clone-Human-Driving
 
-#Preparing for the project
-Before starting this project I did research about the best aproach to take for this project, I used this resources to get a good feeling 
-about the purpose of the project and best techniques to counter problems when facing them, see all resources used listed below this page.
-
 #Files in this repository
 model.py - The script used to create and train the model.
 drive.py - The script to drive the car. resubmit the original drive.py or make modifications and submit your modified version.
@@ -12,11 +8,20 @@ model.h5 - The model weights.
 Readme.md - This file explaining the structure of the used network and training approach for the project.
 
 
-#Model structure:
+#Preparing before starting the project
+Before starting this project I did research about the best aproach to take for this project, I used this resources to get a good feeling 
+about the purpose of the project and best techniques to use, see all resources used listed below this page.
+
+
+#preprocessing the data
+The data was .........................
+
+
+#Model structure
 I decide to use the Keras Sequential model with ... layers and ...., 
 
 
-#Strategy:
+#Strategy
 I decided to follow the advise of my mentor and other classmates to use the great data Udacity provided, this to get the best model possible to perform well on the track 1 in the simulator after opimizing the model to run the training data. 
 
 
@@ -25,7 +30,7 @@ The first run of the model performed great using 10 EPOCH's and batch size 64, t
 But I decided to tweak the model even more, but I also kept in mind that I had to be carefull not to overfit the model, thus this
 would mean no good for driving the track.
 
-#Tweaking the model:
+#Tweaking the model
 The parameters I tweaked were: Number of EPOCH's and the Batch sizes. 
 This overview below shows the gains and losses the model suffered during tweaking it's parameters and the resulting loss & val_loss values, followed by the adjustments I made to optimize the the parameters of the model using the training datat to enable the car to perform best possible when running the drive.py file in the simulator.
 
@@ -44,17 +49,19 @@ Epoch 75/75 = 8064/8036 [==============================] - 42s - loss: 0.0103 - 
 Using 25 EPOCH's with batch size 128 resulted in the same loss as 25 EPOCH's with batch size 64, but a better vall_loss:
 Epoch 25/25 = 8064/8036 [==============================] - 42s - loss: 0.0114 - val_loss: 0.0094
 
-Using 25 EPOCH's with batch size 256 resulted in....:
-Epoch 25/25 = 
+Using 25 EPOCH's with batch size 256 resulted in this values:
+Epoch 25/25 = 8064/8036 [==============================] - 53s - loss: 0.0115 - val_loss: 0.0127
 
 
+#Run the drive.py file on track one
+I decided to try the trained model in the simulator whitout making changes to the drive.py file, the car performed ...
 
 
+#Run the drive.py file on track two
+I decided to try the trained model in the simulator whitout making changes to the drive.py file, the car performed ...
 
 
-
-
-#List of used resources:
+#List of used resources
 The Sequential model API:
 https://keras.io/models/sequential/
 
