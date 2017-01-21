@@ -1,5 +1,6 @@
 #SDC-Project-3-Keras-CNN-Clone-Human-Driving
 
+#Preparing for the project:
 Before starting this project I did research about the best aproach to take for this project, I used this resources to get a good feeling 
 about the purpose of the project and best techniques to counter problems when facing them, see all resources used listed below this page.
 
@@ -12,12 +13,12 @@ about the purpose of the project and best techniques to counter problems when fa
 
 
 model.py - The script used to create and train the model.
+
 drive.py - The script to drive the car. resubmit the original drive.py or make modifications and submit your modified version.
+
 model.json - The model architecture.
+
 model.h5 - The model weights.
-README.md - explains the structure of your network and training approach. While we recommend using English for good practice, 
-writing in any language is acceptable (reviewers will translate). There is no minimum word count so long as there are complete 
-descriptions of the problems and the strategies. 
 
 
 
@@ -25,6 +26,7 @@ descriptions of the problems and the strategies.
 
 
 
+#Model structure:
 
 I used the Keras Sequential model with ... layers, ....
 
@@ -65,22 +67,19 @@ ________________________________________________________________________________
 
 
 
-
+#First run of the model
 
 The first run of the model performed great using 10 EPOCH's and batch size 64, this resulted in: loss: 0.0128 - val_loss: 0.0111.
 But I decided to tweak the model even more, but I also kept in mind that I had to be carefull not to overfit the model, thus this
 would mean no good for driving the track.
 
-The parameters I tweaked were:
+#Tweaking the model:
 
-Number of EPOCH's
-Batch size
-Image size
-.........
+The parameters I tweaked were: Number of EPOCH's and the Batch sizes, this overview shows the gains and losses the model suffered 
+during tweaking it's parameters and the resulting loss & val_loss values.
 
-This overview is showing the gains and losses the model suffered during tweaking it's parameters and the resulting loss & val_loss value:
+Using 10 EPOCH's with batch size 64 resulted in this results at Epoch 10/10:
 
-Epoch 10/10
   64/8036 [..............................] - ETA: 11s - loss: 0.0209
  128/8036 [..............................] - ETA: 11s - loss: 0.0154
  192/8036 [..............................] - ETA: 11s - loss: 0.0141
@@ -207,18 +206,17 @@ Epoch 10/10
 7936/8036 [============================>.] - ETA: 0s - loss: 0.0127
 8000/8036 [============================>.] - ETA: 0s - loss: 0.0127
 8064/8036 [==============================] - 44s - loss: 0.0128 - val_loss: 0.0111
-Process finished with exit code 0
 
 
-Using 25 EPOCH's resulted in even better results, both the loss and val_loss were lower than before:
-
-Epoch 25/25
+Using 25 EPOCH's with batch size 64  resulted in even better results, both the loss and val_loss were lower than before:
 8064/8036 [==============================] - 48s - loss: 0.0112 - val_loss: 0.0101
 
 
-Using 75 EPOCH's resulted in ... results, :
+Using 75 EPOCH's with batch size 64  resulted in a lower loss, but higher val_loss:
+8064/8036 [==============================] - 42s - loss: 0.0103 - val_loss: 0.0111
 
 
+Using 25 EPOCH's with batch size 128 resulted in....:
 
 
 
