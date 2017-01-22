@@ -38,27 +38,33 @@ would mean no good for driving the track. Also the Adam optimizer was used by me
 #Tweaking the model
 The parameters I tweaked a lot to get the best model with the lowest error score were: Number of EPOCH's and the Batch size of the train and validation data runs. The overview below shows the gains and losses the model suffered during tweaking it's parameters and the resulting loss & val_loss score, followed by the adjustments I made to optimize the the parameters of the model using the training datat to enable the car to perform best possible when using the output files to get the car running wel on the autonomus mode on the tracks in the simulator. When finished optimizing the model used 25 EPOCH's and a Batch size of 64, 
 
-Using 10 EPOCH's with batch size 64 resulted in this scores: 
+Using 10 EPOCH's with batch size 64 resulted in this scores:
+
 8064/8036 [==============================] - 44s - loss: 0.0128 - val_loss: 0.0111
 
 Using 25 EPOCH's with batch size 64 resulted in even better results, both loss and val_loss were lower:
+
 8064/8036 [==============================] - 48s - loss: 0.0112 - val_loss: 0.0101
 
 Using 75 EPOCH's with batch size 64  resulted in a lower loss, but higher val_loss:
+
 8064/8036 [==============================] - 42s - loss: 0.0103 - val_loss: 0.0111
 
 Using 25 EPOCH's with batch size 128 resulted in the same loss as 25 EPOCH's with batch size 64, but a better vall_loss:
+
 8064/8036 [==============================] - 42s - loss: 0.0114 - val_loss: 0.0094
 
 Using 25 EPOCH's with batch size 256 resulted in this values:
+
 8064/8036 [==============================] - 53s - loss: 0.0115 - val_loss: 0.0127
 
 Final model parameters, using 25 EPOCH's and with a batch size of 64:
+
 8064/8036 [==============================] - 42s - loss: 0.0104 - val_loss: 0.0107
 
 
 #Run the drive.py file on track one
-I decided to try the trained model in the simulator xxxxxxxxxxxxxxxxxxxx making changes to the drive.py file, the car performed ...
+I decided to try the trained model in the simulator track one after making changes to the model.py and drive.py file, the car performed good and this would mean the submission would pass on this rubrick I think.
 
 
 #Run the drive.py file on track two
@@ -66,7 +72,6 @@ I decided to try the trained model in the simulator whitout making changes to th
 
 
 #List of used resources
-
 Adam: A Method for Stochastic Optimization:
 https://arxiv.org/abs/1412.6980v8
 
