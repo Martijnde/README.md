@@ -2,19 +2,18 @@
 
 #Files in this repository
 model.py - The script used to create and train the model.
-drive.py - The script to drive the car. resubmit the original drive.py or make modifications and submit your modified version.
+drive.py - The script to drive the car. (with modifications, the modified version will be explained below.
 model.json - The model architecture.
 model.h5 - The model weights.
-Readme.md - This file explaining the structure of the used network and training approach for the project.
+Readme.md - Explaining the network structure, the model, training approach and used recources for the project.
 
 
 #Preparing before starting the project
-Before starting this project I did research about the best aproach to take for this project, I used this resources to get a good feeling 
-about the purpose of the project and best techniques to use, see all resources used listed below this page.
+Before starting this project I did research about the aim of and the best aproach to take for a succesful submission for this very challenging project, so I used the resources to get a good feeling about the purpose of the project and best techniques to use, all resources that were viewed and used by me are listed below this page.
 
 
-#preprocessing the data
-The data was .........................
+#Preprocessing the data
+The data was resized to 64 by 64 format to make them smaller to make the model run faster, 
 
 
 #Model structure
