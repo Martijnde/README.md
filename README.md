@@ -13,15 +13,22 @@ Before starting this project I did research about the aim of and the best aproac
 
 
 #Preprocessing the data
-The data was resized to 64 by 64 format to make them smaller to make the model run faster, 
+The data was resized to 64x64 format to make them smaller so the model could run faster, I also edited the format of the images to 64x64 in the drive.py file, to use the same format of the images when running. Next to this I splitted the data into train and validation sets and the images in both the train and validation datasets were normalized and shuffled. 
 
 
 #Model structure
-I decide to use the Keras Sequential model with ... layers and ...., 
+I decide to use the Keras Sequential model based on the NVIDIA model with 5 conventional layers and flatten, dropout and dense, this to optimize  
 
 
 #Strategy
-I decided to follow the advise of my mentor and other classmates to use the great data Udacity provided, this to get the best model possible to perform well on the track 1 in the simulator after opimizing the model to run the training data. 
+I decided to follow the advise of my mentor and other classmates to use the great dataset Udacity provided, the first runs oon my own generated data were not good at all. The Udacity dataset enabled me to build and tweak the best model possible to perform well on in the simulator, before using the Udacity dataset I took a look and noticed that some of the pictures looked somewhat nooisy and bumpy, this are some examples of pictures we had to keep in mind when pre prosessing the data before training our model:
+
+>>>>>>>>>>> Picture
+
+
+>>>>>>>>>>>>>> Picture
+
+>>>>>>>>>>. Picture 
 
 
 #First run of the model
