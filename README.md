@@ -19,6 +19,7 @@ The data was resized to 64x64 format to make them smaller so the model could run
 #Model structure
 I decide to use the Keras Sequential model based on the NVIDIA model with 5 conventional layers and flatten, dropout and dense, this to optimize  
 
+![alt tag](https://github.com/Martijnde/SDC-Project-3-Keras-CNN-Clone-Human-Driving/blob/master/CNN%20Model%20Project%203.JPG?raw=true)
 
 #Strategy
 I decided to follow the advise of my mentor and other classmates to use the great dataset Udacity provided, the first runs oon my own generated data were not good at all. The Udacity dataset enabled me to build and tweak the best model possible to perform well on in the simulator, before using the Udacity dataset I took a look and noticed that some of the pictures looked somewhat nooisy and bumpy, this are some examples of pictures we had to keep in mind when pre prosessing the data before training our model:
