@@ -27,33 +27,27 @@ I decided to follow the advise of my mentor and other classmates to use the grea
 #First run of the model
 The first run of the model performed great using 10 EPOCH's and batch size 64, this resulted in: loss: 0.0128 - val_loss: 0.0111.
 But I decided to tweak the model even more, but I also kept in mind that I had to be carefull not to overfit the model, thus this
-would mean no good for driving the track.
+would mean no good for driving the track. Also the Adam optimizer was used by me for Stochastic Optimization, to help the model perform well doing pattern recognition on the noisy dataset (The images) to get the lowest error possible.
 
 #Tweaking the model
-The parameters I tweaked were: Number of EPOCH's and the Batch sizes. 
-This overview below shows the gains and losses the model suffered during tweaking it's parameters and the resulting loss & val_loss values, followed by the adjustments I made to optimize the the parameters of the model using the training datat to enable the car to perform best possible when running the drive.py file in the simulator.
+The parameters I tweaked a lot to get the best model with the lowest error score were: Number of EPOCH's and the Batch size of the train and validation data runs. The overview below shows the gains and losses the model suffered during tweaking it's parameters and the resulting loss & val_loss score, followed by the adjustments I made to optimize the the parameters of the model using the training datat to enable the car to perform best possible when using the output files to get the car running wel on the autonomus mode on the tracks in the simulator. When finished optimizing the model used 25 EPOCH's and a Batch size of 64, 
 
 Using 10 EPOCH's with batch size 64 resulted in this valeus: 
 Epoch 10/10 = 8064/8036 [==============================] - 44s - loss: 0.0128 - val_loss: 0.0111
 
-
 Using 25 EPOCH's with batch size 64 resulted in even better results, both loss and val_loss were lower:
 Epoch 25/25 = 8064/8036 [==============================] - 48s - loss: 0.0112 - val_loss: 0.0101
-
 
 Using 75 EPOCH's with batch size 64  resulted in a lower loss, but higher val_loss:
 Epoch 75/75 = 8064/8036 [==============================] - 42s - loss: 0.0103 - val_loss: 0.0111
 
-
 Using 25 EPOCH's with batch size 128 resulted in the same loss as 25 EPOCH's with batch size 64, but a better vall_loss:
 Epoch 25/25 = 8064/8036 [==============================] - 42s - loss: 0.0114 - val_loss: 0.0094
-
 
 Using 25 EPOCH's with batch size 256 resulted in this values:
 Epoch 25/25 = 8064/8036 [==============================] - 53s - loss: 0.0115 - val_loss: 0.0127
 
-
-I decided to run the model Using 25 EPOCH's with batch size 64:
+Final model parameters, using 25 EPOCH's and with a batch size of 64:
 Epoch 25/25 = 8064/8036 [==============================] - 42s - loss: 0.0104 - val_loss: 0.0107
 
 
@@ -66,6 +60,10 @@ I decided to try the trained model in the simulator whitout making changes to th
 
 
 #List of used resources
+
+Adam: A Method for Stochastic Optimization:
+https://arxiv.org/abs/1412.6980v8
+
 The Sequential model API:
 https://keras.io/models/sequential/
 
