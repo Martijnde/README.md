@@ -66,9 +66,15 @@ Final model parameters, using 25 EPOCH's and with a batch size of 64:
 #Run the drive.py file on track one
 I decided to try the trained model in the simulator track one after making changes to the model.py and drive.py file, the car performed good and this would mean the submission would pass on this rubrick I think.
 
+First I tried the model using 10 epoch's, this resulted in a crash (car in water)
+8064/8036 [==============================] - 38s - loss: 0.0116 - val_loss: 0.0109
+
+Using 25 epoch's resulted in great results on track 1!!
+8064/8036 [==============================] - 48s - loss: 0.0271 - val_loss: 0.0084
+
 
 #Run the drive.py file on track two
-I decided to try the trained model in the simulator whitout making changes to the drive.py file, the car performed ...
+I decided to try the trained model in the simulator whitout making changes to the drive.py file, the car performed not very good at track two, I have to proceed to p4 & p5 now to reach the deadlines, so I decided to not tweak the model again for training it to also perform well on track two because I have to focus on reaching the term one dealines on time. 
 
 
 #List of used resources
