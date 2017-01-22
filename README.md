@@ -23,9 +23,7 @@ I decide to use the Keras Sequential model based on the NVIDIA model with 5 conv
 #Strategy
 I decided to follow the advise of my mentor and other classmates to use the great dataset Udacity provided, the first runs oon my own generated data were not good at all. The Udacity dataset enabled me to build and tweak the best model possible to perform well on in the simulator, before using the Udacity dataset I took a look and noticed that some of the pictures looked somewhat nooisy and bumpy, this are some examples of pictures we had to keep in mind when pre prosessing the data before training our model:
 
->>>>>>>>>>> Picture
-
-
+https://github.com/Martijnde/SDC-Project-3-Keras-CNN-Clone-Human-Driving/blob/a83f918811b98649755b1e8bf8da6b04bcfdfa68/Noisy%20Image%20Example%201.jpg?raw=true
 >>>>>>>>>>>>>> Picture
 
 >>>>>>>>>>. Picture 
