@@ -49,12 +49,17 @@ Epoch 75/75 = 8064/8036 [==============================] - 42s - loss: 0.0103 - 
 Using 25 EPOCH's with batch size 128 resulted in the same loss as 25 EPOCH's with batch size 64, but a better vall_loss:
 Epoch 25/25 = 8064/8036 [==============================] - 42s - loss: 0.0114 - val_loss: 0.0094
 
+
 Using 25 EPOCH's with batch size 256 resulted in this values:
 Epoch 25/25 = 8064/8036 [==============================] - 53s - loss: 0.0115 - val_loss: 0.0127
 
 
+I decided to run the model Using 25 EPOCH's with batch size 64:
+Epoch 25/25 = 8064/8036 [==============================] - 42s - loss: 0.0104 - val_loss: 0.0107
+
+
 #Run the drive.py file on track one
-I decided to try the trained model in the simulator whitout making changes to the drive.py file, the car performed ...
+I decided to try the trained model in the simulator xxxxxxxxxxxxxxxxxxxx making changes to the drive.py file, the car performed ...
 
 
 #Run the drive.py file on track two
