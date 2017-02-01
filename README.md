@@ -59,10 +59,10 @@ Using 25 EPOCH's with batch size 256 resulted in this values:
 
 8064/8036 [==============================] - 53s - loss: 0.0115 - val_loss: 0.0127
 
-Final model parameters, using 25 EPOCH's and with a batch size of 64:
+## Final model parameters, using 32 EPOCH's and with a batch size of 64:
 
-8064/8036 [==============================] - 42s - loss: 0.0104 - val_loss: 0.0107
 
+![alt tag](https://github.com/Martijnde/SDC-Project-3-Keras-CNN-Clone-Human-Driving/blob/master/35%20Epochs.JPG?raw=true)
 
 #Run the drive.py file on track one
 I decided to try the trained model in the simulator track one after making changes to the model.py and drive.py file, the car performed good and this would mean the submission would pass on this rubrick I think.
