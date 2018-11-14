@@ -17,7 +17,7 @@ The data was resized to 64x64 format to make them smaller so the model could run
 
 
 #Model structure
-I decide to use the Keras Sequential model based on the NVIDIA model with 5 conventional layers and flatten, dropout and dense, this to optimize  
+I decided to use the Keras Sequential model based on the NVIDIA model with 5 conventional layers and flatten, dropout and dense, this to optimize  
 
 ![alt tag](https://github.com/Martijnde/SDC-Project-3-Keras-CNN-Clone-Human-Driving/blob/master/CNN%20Model%20Project%203.JPG?raw=true)
 
